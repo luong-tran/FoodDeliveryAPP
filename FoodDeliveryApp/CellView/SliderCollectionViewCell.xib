@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SliderCollectionViewCell" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="k6t-XH-7Lq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="upto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dol-0z-gFT">
+                        <rect key="frame" x="305.5" y="74" width="38.5" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGU-M6-jdU">
+                        <rect key="frame" x="285" y="95.5" width="77" height="43"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYi-Hh-qSM">
+                        <rect key="frame" x="310" y="138.5" width="34" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="k6t-XH-7Lq" secondAttribute="trailing" id="8Hp-vK-Ib1"/>
+                <constraint firstItem="k6t-XH-7Lq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ElF-O7-y7g"/>
+                <constraint firstAttribute="bottom" secondItem="k6t-XH-7Lq" secondAttribute="bottom" id="IpD-Lb-EjD"/>
+                <constraint firstAttribute="trailing" secondItem="iYi-Hh-qSM" secondAttribute="trailing" constant="31" id="RUl-QY-wZl"/>
+                <constraint firstAttribute="trailing" secondItem="PGU-M6-jdU" secondAttribute="trailing" constant="13" id="fJU-ef-me8"/>
+                <constraint firstItem="PGU-M6-jdU" firstAttribute="top" secondItem="Dol-0z-gFT" secondAttribute="bottom" id="fxB-RS-esS"/>
+                <constraint firstAttribute="trailing" secondItem="Dol-0z-gFT" secondAttribute="trailing" constant="31" id="iYI-QE-zNu"/>
+                <constraint firstItem="k6t-XH-7Lq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jrQ-W6-jJf"/>
+                <constraint firstItem="iYi-Hh-qSM" firstAttribute="top" secondItem="PGU-M6-jdU" secondAttribute="bottom" id="v8I-S3-EnH"/>
+                <constraint firstItem="Dol-0z-gFT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="74" id="vIZ-JC-8WJ"/>
+            </constraints>
+            <size key="customSize" width="375" height="180"/>
+            <connections>
+                <outlet property="imgSlide" destination="k6t-XH-7Lq" id="eEA-f9-MQP"/>
+                <outlet property="lblPercent" destination="PGU-M6-jdU" id="hWW-y2-Txc"/>
+            </connections>
+            <point key="canvasLocation" x="373.1884057971015" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img1" width="320" height="179"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

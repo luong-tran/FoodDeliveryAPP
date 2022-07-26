@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemFoodCollectionViewCell" customModule="FoodDeliveryApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="280"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food1" translatesAutoresizingMaskIntoConstraints="NO" id="fdT-gY-xfQ">
+                        <rect key="frame" x="0.0" y="10" width="174" height="151"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheese Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-Ye-pQo">
+                        <rect key="frame" x="5" y="171" width="164" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.00 $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zov-5X-ZDW">
+                        <rect key="frame" x="10" y="197" width="154" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufj-us-vfo">
+                        <rect key="frame" x="44" y="222.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="7ZJ-Qz-xZ4"/>
+                            <constraint firstAttribute="height" constant="30" id="Z37-ix-IgW"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="minus.circle.fill" catalog="system"/>
+                        <connections>
+                            <action selector="minusQuantity:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4VQ-6H-Yry"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-RR-dQb">
+                        <rect key="frame" x="124" y="227.5" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDd-W2-g6t">
+                        <rect key="frame" x="133" y="10" width="21" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="eBq-dv-p9t"/>
+                            <constraint firstAttribute="width" constant="21" id="wsz-zR-Foj"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                        <connections>
+                            <action selector="favoriteFood:" destination="gTV-IL-0wX" eventType="touchUpInside" id="lD3-o0-H7d"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYg-ri-gpp">
+                        <rect key="frame" x="74" y="222.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="5wc-6E-FlW"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="EGv-Ha-pbE"/>
+                            <constraint firstAttribute="width" constant="30" id="bd3-T8-S2H"/>
+                            <constraint firstAttribute="height" constant="30" id="pii-1X-e2G"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system"/>
+                        <connections>
+                            <action selector="addQuantity:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Sa6-Az-xxf"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="a0q-Ye-pQo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="0aI-q0-OKc"/>
+                <constraint firstItem="xYg-ri-gpp" firstAttribute="leading" secondItem="Ufj-us-vfo" secondAttribute="trailing" id="0ow-dT-VM7"/>
+                <constraint firstItem="Ufj-us-vfo" firstAttribute="top" secondItem="zov-5X-ZDW" secondAttribute="bottom" constant="5" id="CH8-tp-zwW"/>
+                <constraint firstAttribute="trailing" secondItem="fdT-gY-xfQ" secondAttribute="trailing" id="PNg-IC-2YE"/>
+                <constraint firstItem="fdT-gY-xfQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RPZ-E6-DMY"/>
+                <constraint firstAttribute="trailing" secondItem="zov-5X-ZDW" secondAttribute="trailing" constant="10" id="WsA-Te-Xs4"/>
+                <constraint firstItem="xYg-ri-gpp" firstAttribute="top" secondItem="zov-5X-ZDW" secondAttribute="bottom" constant="5" id="Y1B-5s-hrZ"/>
+                <constraint firstItem="Lxb-RR-dQb" firstAttribute="top" secondItem="zov-5X-ZDW" secondAttribute="bottom" constant="10" id="Zs2-kg-T2c"/>
+                <constraint firstItem="eDd-W2-g6t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="cGq-H6-f2u"/>
+                <constraint firstAttribute="trailing" secondItem="a0q-Ye-pQo" secondAttribute="trailing" constant="5" id="dO0-PY-MrL"/>
+                <constraint firstItem="fdT-gY-xfQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="eBT-dT-wkb"/>
+                <constraint firstItem="zov-5X-ZDW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="m1b-6C-3ut"/>
+                <constraint firstItem="Ufj-us-vfo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="44" id="mp3-CN-wbV"/>
+                <constraint firstAttribute="trailing" secondItem="eDd-W2-g6t" secondAttribute="trailing" constant="20" id="qv2-X2-HxI"/>
+                <constraint firstItem="zov-5X-ZDW" firstAttribute="top" secondItem="a0q-Ye-pQo" secondAttribute="bottom" constant="5" id="yuq-lz-WxR"/>
+                <constraint firstItem="Lxb-RR-dQb" firstAttribute="leading" secondItem="xYg-ri-gpp" secondAttribute="trailing" constant="20" id="zHq-2f-m80"/>
+                <constraint firstItem="a0q-Ye-pQo" firstAttribute="top" secondItem="fdT-gY-xfQ" secondAttribute="bottom" constant="10" id="zwS-XH-eyN"/>
+            </constraints>
+            <size key="customSize" width="174" height="280"/>
+            <connections>
+                <outlet property="btnAdd" destination="xYg-ri-gpp" id="OW0-s1-RTX"/>
+                <outlet property="btnFavorite" destination="eDd-W2-g6t" id="oj3-y6-Xe3"/>
+                <outlet property="btnMinus" destination="Ufj-us-vfo" id="dev-gl-ghD"/>
+                <outlet property="imgFood" destination="fdT-gY-xfQ" id="0CY-lV-r0W"/>
+                <outlet property="lblCount" destination="Lxb-RR-dQb" id="wvf-02-OQN"/>
+                <outlet property="lblNameFood" destination="a0q-Ye-pQo" id="clF-lW-Wni"/>
+                <outlet property="lblPriceFood" destination="zov-5X-ZDW" id="hC9-ss-uAE"/>
+            </connections>
+            <point key="canvasLocation" x="227.536231884058" y="174.77678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food1" width="151" height="151"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
